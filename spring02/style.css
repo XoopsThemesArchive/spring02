@@ -1,0 +1,134 @@
+@charset 'EUC-JP';
+
+body {background-color: #e0ffa1; margin: 0; padding: 0; text-align: center; font-size: 95%;}
+.contents {background-color: #fff; margin: 0 2%; padding: 0; text-align: left; border-left: 1px solid #390; border-right: 1px solid #390;}
+
+table {width: 100%; margin: 0px; padding: 0px;}
+table td {padding: 0px; border-width: 0px; vertical-align: top;}
+th {background-color: #390; color: #fff; padding : 2px; vertical-align : middle; text-align: center; font-weight: normal;}
+
+a {color: #000; text-decoration: none; background-color: transparent;}
+a:hover {color: #390;}
+th a {color: #fff;}
+th a:hover {color: #000;}
+.headerbar a {color: #fff;}
+.headerbar a:hover {color: #000;}
+.head a {color: #fff;}
+.head a:hover {color: #000;}
+.itemHead a {color: #fff;}
+.itemHead a:hover {color: #000;}
+.foot a {color: #fff;}
+.foot a:hover {color: #000;}
+address a {color: #fff; font-size: 85%; font-style: normal;}
+address a:hover {color: #000; font-size: 85%; font-style: normal;}
+
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+ul {margin: 0; padding: 2px 5px; text-align: left;}
+li {list-style: square inside; color: #000;}
+
+input {color:#000; border:1px solid #390; margin: 1px; padding-top:3px; background-color: #fff;}
+textarea {color:#000; border:1px solid #390; margin: 1px; padding-top:3px; background-color: #fff;}
+
+.item {background-color: #fff; margin: 0;}
+.itemHead {margin: 0; padding: 5px 10px; font-weight: bold; background: #390; color: #fff;}
+.itemInfo {text-align: right; padding: 3px 10px 2px; background: #cf6;}
+.itemPoster {}
+.itemPostDate {}
+.itemStats {}
+.itemBody {padding: 2px 15px;}
+.itemText {line-height: 1.5em;}
+.itemText:first-letter {font-size: 133%; font-weight: bold;}
+.itemFoot {margin: 0; padding: 2px 10px; line-height: 120%; text-align: right; border-bottom: 1px solid #390;}
+.itemAdminLink {}
+.itemPermaLink {}
+
+.header {}
+.header img {vertical-align: bottom;}
+.headerbanner01 {width: 200px; background-color: #fff;}
+.headerlogo {background-color: #fff; text-align: center;}
+.headerbanner02 {width: 200px; background-color: #fff;}
+
+.headerbar {color: #fff; background-color: #390; padding-right: 10px; text-align: right;}
+.headerbar input {vertical-align: middle;}
+
+.main {}
+
+.leftcolumn {width: 180px; margin: 0; padding: 20px 7px;}
+.leftcolumn th {background-color: #390; color: #fff; vertical-align: middle;}
+.leftcolumn div.blockTitle {background-color: #cf6; margin: 0; padding: 5px 10px; text-align: left; font-weight: bold; vertical-align: bottom;}
+.leftcolumn div.blockContent {margin: 0; padding: 7px 10px 20px; line-height: 120%;}
+
+.centercolumn {padding: 20px; border-left: 1px solid #9c3; border-right: 1px solid #9c3;}
+
+.center {}
+.centercolumn div.blockTitle img {vertical-align: middle;}
+
+.centerCcolumn {}
+.centerCcolumn div.blockTitle {margin: 0; padding: 5px 10px;background: #cf6; text-align: left; font-weight: bold;}
+.centerCcolumn div.blockContent {background-color: #fff; margin-bottom: 20px; padding: 10px;}
+.centerCcolumn div.blockTitle img {vertical-align: middle;}
+
+.centerLcolumn {width: 48%; float: left; text-align: left;}
+.centerLcolumn div.blockTitle {margin: 0; padding: 5px 10px;background: #cf6; text-align: left; font-weight: bold;}
+.centerLcolumn div.blockContent {background-color: #fff; margin-bottom: 20px; padding: 10px;}
+
+.centerRcolumn {width: 48%; float: right; text-align: left;}
+.centerRcolumn div.blockTitle {margin: 0; padding: 5px 10px;background: #cf6; text-align: left; font-weight: bold;}
+.centerRcolumn div.blockContent {background-color: #fff; margin-bottom: 20px; padding: 10px;}
+
+.content {clear: both; text-align: left;}
+.content div.blockTitle {color: #000; padding: 5px; font-size: 150%; font-weight: bold;}
+
+.rightcolumn {width: 180px; margin: 0; padding: 20px 7px;}
+.rightcolumn th {background-color: #390; color: #fff; vertical-align: middle;}
+.rightcolumn div.blockTitle {background-color: #cf6; margin: 0; padding: 5px 10px; text-align: left; font-weight: bold; vertical-align: bottom;}
+.rightcolumn div.blockContent {margin: 0; padding: 7px 10px 20px; line-height: 120%;}
+
+.copyright {background-color: #390; margin: 0; padding: 5px 0; text-align: center;}
+
+td#mainmenu a {display: block; border-bottom: 1px dotted #9c3;}
+td#mainmenu a:hover {color: #390;}
+td#mainmenu a.menuTop {}
+td#mainmenu a.menuMain {}
+td#mainmenu a.menuSub {padding-left: 10px;}
+
+td#usermenu a {display: block; border-bottom: 1px dotted #9c3;}
+td#usermenu a:hover {color: #390;}
+td#usermenu a.menuTop {}
+td#usermenu a.highlight {background-color: #cf6;}
+
+.outer {background-color: #fff; border: 1px solid #9c3;}
+.outer td{padding: 5px;}
+.head {background-color: #390; color: #fff;}
+.even {background-color: #cf6;}
+.odd {background-color: #fff; border-right: 1px solid #9c3; border-bottom: 1px solid #9c3;}
+.foot {background-color: #390; color: #fff;}
+tr.even td {background-color: #cf6;}
+tr.odd td {background-color: #fff;}
+
+div.errorMsg {background-color: #fff; text-align: center; border: 1px solid #000; font-weight: bold; padding: 10px;}
+div.confirmMsg {background-color: #fff; color: #000; text-align: center; border: 1px solid #000; font-weight: bold; padding: 10px;}
+div.resultMsg {background-color : #fff; color: #000; text-align: center; border: 1px solid #000; font-weight: bold; padding: 10px;}
+
+div.xoopsCode {background: #FFF; border: 1px inset #000; padding: 0px 6px 6px 6px;}
+div.xoopsQuote {background: #FFF; border: 1px inset #000; padding: 0px 6px 6px 6px;}
+
+
+.comTitle {font-weight: bold; margin-bottom: 2px;}
+.comText {padding: 2px;}
+.comUserStat {color: #000; font-weight:bold; border: 1px solid #000; background-color: #fff; margin: 2px; padding: 2px;}
+.comUserStatCaption {font-weight: normal;}
+.comUserStatus {margin-left: 2px; margin-top: 10px; color: #000; font-weight:bold;}
+.comUserRank {margin: 2px;}
+.comUserRankText {font-weight:bold;}
+.comUserRankImg {border: 0px;}
+.comUserName {}
+.comUserImg {margin: 2px;}
+.comDate {font-weight: normal;}
+.comDateCaption {font-weight: bold; font-style: normal;}
+
+.count {height: 0; overflow: hidden;}

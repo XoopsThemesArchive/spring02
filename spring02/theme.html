@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="copyright" content="Original Theme Designed by X-Lab(http://x-lab.rdy.jp/). Copyright (C) 2007 X-Lab." />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_themecss}>" />
+<!-- RMV: added module header -->
+<{$xoops_module_header}>
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+</head>
+<body>
+<div class="contents">
+
+<table class="header" cellspacing="0">
+<tr>
+<td class="headerbanner01">
+	<img src="<{$xoops_imageurl}>image/bg01.jpg" />
+</td>
+<td class="headerlogo">
+	<a href="<{$xoops_url}>/"><img src="<{$xoops_imageurl}>image/titlelogo.jpg" /></a>
+</td>
+<td class="headerbanner02">
+	<img src="<{$xoops_imageurl}>image/bg02.jpg" />
+</td>
+</tr>
+
+<tr>
+<td class="headerbar" colspan="3">	  
+	<!-- ユーザー未ログイン -->
+	<{if !$xoops_isuser}>
+	<form action="<{$xoops_url}>/user.php" method="post" style="margin:0px;">
+	ユーザー名：<input type="text" name="uname" size="12" value="" maxlength="25" />
+	パスワード：<input type="password" name="pass" size="12" maxlength="32" />
+	<input type="hidden" name="xoops_redirect" value="/" />
+	<input type="hidden" name="op" value="login" />
+	<input type="submit" value="ログイン" />
+	&nbsp;&nbsp;<a href="<{$xoops_url}>/user.php#lost">パスワード紛失</a>&nbsp;&nbsp;<a href="<{$xoops_url}>/register.php">新規登録</a>
+	</form>
+	<!-- ユーザーログイン -->
+	<{else}>
+	<div style="padding-top: 5px; padding-bottom: 5px">
+	<a href="<{$xoops_url}>/user.php">アカウント情報</a>&nbsp; | &nbsp;
+	<a href="<{$xoops_url}>/notifications.php">イベント通知</a>&nbsp; | &nbsp;
+	<a href="<{$xoops_url}>/viewpmsg.php">受信箱</a>&nbsp; | &nbsp;
+	<a href="<{$xoops_url}>/user.php?op=logout">ログアウト</a>&nbsp; | &nbsp;
+	<{if $xoops_isadmin}>&nbsp;<a href="<{$xoops_url}>/admin.php">管理メニュー</a>&nbsp;&nbsp;<{/if}>
+	</div>
+	<{/if}>
+</td>
+</tr>
+
+</table>
+
+<table class="main" cellspacing="0">
+<tr>
+<td id="leftcolumn" class="leftcolumn">
+	<!-- Start left blocks loop -->
+	<{foreach item=block from=$xoops_lblocks}>
+	<div class="blockTitle"><{$block.title}></div>
+	<div class="blockContent"><{$block.content}></div>
+	<{/foreach}>
+	<!-- End left blocks loop -->
+</td>
+<td id="centercolumn" class="centercolumn">
+	<!-- Display center blocks if any -->
+	<{if $xoops_showcblock == 1}>
+
+	<div class="centerCcolumn">
+	<!-- Start center-center blocks loop -->
+	<{foreach item=block from=$xoops_ccblocks}>
+	<div class="blockTitle"><{$block.title}></div>
+	<div class="blockContent"><{$block.content}></div>
+	<{/foreach}>
+	<!-- End center-center blocks loop -->
+	</div>
+
+	<div class="centerLcolumn">
+	<!-- Start center-left blocks loop -->
+	<{foreach item=block from=$xoops_clblocks}>
+	<div class="blockTitle"><{$block.title}></div>
+	<div class="blockContent"><{$block.content}></div>
+	<{/foreach}>
+	<!-- End center-left blocks loop -->
+	</div>
+	
+	<div class="centerRcolumn">
+	<!-- Start center-right blocks loop -->
+	<{foreach item=block from=$xoops_crblocks}>
+	<div class="blockTitle"><{$block.title}></div>
+	<div class="blockContent"><{$block.content}></div>
+	<{/foreach}>
+	<!-- End center-right blocks loop -->
+	</div>
+
+	<{/if}>
+	<!-- End display center blocks -->
+
+	<div class="content">
+	<{$xoops_contents}>
+	</div>
+	
+</td>
+
+	<{if $xoops_showrblock == 1}>
+	
+<td id="rightcolumn" class="rightcolumn">
+	
+	<!-- Start right blocks loop -->
+	<{foreach item=block from=$xoops_rblocks}>
+	<div class="blockTitle"><{$block.title}></div>
+	<div class="blockContent"><{$block.content}></div>
+	<{/foreach}>
+	<!-- End right blocks loop -->
+</td>
+
+	<{/if}>
+	
+</tr>
+
+</table>
+
+<address class="copyright"><a href="http://x-lab.rdy.jp/" target="_blank">-&nbsp;Original Theme : Copyright (C) 2007 X-Lab&nbsp;-</a></address>
+
+</div>
+
+</body>
+</html>
